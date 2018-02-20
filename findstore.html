@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Edible Arrangements | Find A Store</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style>
+		body{
+			background-color: #fbf6f3;
+		}
+
+		h1{
+			margin-bottom: 20px;
+			text-align: center;
+			color: #ff4f4f;
+		}
+
+		p{
+			font-size: 16px;
+		}
+
+		.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+   
+			background-color:#ff4f4f;
+		}
+
+		.nav-pills > li.other > a, .nav-pills > li.other > a:hover, .nav-pills > li.other > a:focus{
+			color: #ff4f4f;
+		}
+
+		.btn{
+			background-color: #ff4f4f;
+			border-color: #ff4f4f;
+			margin-top: 10px;
+		}
+
+		.btn:hover, .btn:focus, .btn:active:hover{
+			background-color: #e65252;
+			border-color: #e65252;
+		}
+
+		#display{
+			color: red;
+			font-weight: bold;
+		}
+
+	</style>
+
+</head>
+
+<!-- 
+	xs for phones < 768px wide; 
+	sm for tablets >= 768px wide; 
+	md for small laptops >= 992px wide; 
+	lg for laptops/desktops >= 1200px wide 
+-->
+
+<body>
+
+	<div class="container">
+
+		<ul class="nav nav-pills">
+			<li class="other"><a href="index.html">Home</a></li>
+			<li class="other"><a href="about.html">About Us</a></li>
+			<li class="other"><a href="catalog.html">Catalog</a></li>
+			<li class="other"><a href="track.html">Track Your Order</a></li>
+			<li class="active"><a href="#">Find A Store</a></li>
+		</ul>
+
+		<h1><b>Find A Store</b></h1>
+
+		<p>To contact us, you must first find a store near you.</p>
+		<p>Enter your location info below:</p>
+
+		<form class="form-inline">
+			<input class="form-control" type="text" placeholder="Enter City and State">
+		</form>
+		<p><a class="btn btn-primary" href="#" onclick="showInput();">Find Stores</a></p>
+		<p id="display"></p>
+
+		<hr>
+		
+	<p>All information was taken from the official Edible Arrangements website.</p>
+
+	</div>
+   
+   <script language="JavaScript">
+		function showInput() {
+        	document.getElementById("display").innerHTML = "*Sorry, invalid location.";
+    	}
+	</script>
+
+</body>
+
+</html>
